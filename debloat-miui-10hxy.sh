@@ -144,7 +144,7 @@ adb shell pm uninstall -k --user 0 com.xiaomi.scanner
 # adb shell pm uninstall -k --user 0 com.miui.gallery
 # adb shell pm uninstall -k --user 0 com.miui.cleanmaster
 
-# 小米商店不可以删除，否则会卡米，之后进入recovery需要清除数据，然后又会恢复到新机时候的初始化系统
+# 小米商店不可以删除，否则会卡米，之后进入recovery需要清除数据，然后又会恢复到新机时候的初始化系统，但是注意不是所有的手机都预装了recovery，只有小米的部分手机是这样的，至于其他手机的卡机是怎么处理的有待验证。
 # adb shell pm uninstall -k --user 0 com.xiaomi.market
 # reboot
 adb reboot
