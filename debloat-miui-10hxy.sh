@@ -89,11 +89,11 @@ adb shell pm uninstall -k --user 0 com.xiaomi.o2o
 adb shell pm uninstall -k --user 0 com.xiaomi.oversea.ecom
 adb shell pm uninstall -k --user 0 com.xiaomi.pass
 adb shell pm uninstall -k --user 0 com.xiaomi.payment
-adb shell pm uninstall -k --user 0 com.xiaomi.scanner
+
 adb shell pm uninstall -k --user 0 com.xiaomi.shop
 adb shell pm uninstall -k --user 0 com.xiaomi.vipaccount
 
-#add
+#others
 adb shell pm uninstall -k --user 0 com.miui.calculator
 adb shell pm uninstall -k --user 0 com.android.email
 adb shell pm uninstall -k --user 0 com.xiaomi.gamecenter
@@ -113,6 +113,11 @@ adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
 adb shell pm uninstall -k --user 0 com.android.apps.tag
 adb shell pm uninstall -k --user 0 com.android.printspooler
 adb shell pm uninstall -k --user 0 com.android.keychain
+adb shell pm uninstall -k --user 0 com.longcheertel.cit
+adb shell pm uninstall -k --user 0 com.longcheertel.AutoTest
+adb shell pm uninstall -k --user 0 com.mimoprint.xiaomi
+
+#驾车模式应该是自主可以卸载的，小米卡包，小米金融组件
 
 #data for new phone
 
@@ -129,9 +134,9 @@ adb shell pm uninstall -k --user 0 com.miui.miuibbs
 adb shell pm uninstall -k --user 0 com.iflytek.inputmethod.miui
 
 
-#failure
+#failure，也许是可以手动卸载的
 adb shell pm uninstall -k --user 0 com.mfashiongallery.emag
-
+adb shell pm uninstall -k --user 0 com.xiaomi.scanner
 
 
 #reserve
@@ -143,7 +148,7 @@ adb shell pm uninstall -k --user 0 com.mfashiongallery.emag
 # adb shell pm uninstall -k --user 0 com.miui.gallery
 # adb shell pm uninstall -k --user 0 com.miui.cleanmaster
 
-# 小米商店不可以删除，否则会卡米，之后进入recovery
+# 小米商店不可以删除，否则会卡米，之后进入recovery需要清除数据，然后又会恢复到新机时候的初始化系统，但是注意不是所有的手机都预装了recovery，只有小米的部分手机是这样的，至于其他手机的卡机是怎么处理的有待验证。
 # adb shell pm uninstall -k --user 0 com.xiaomi.market
 # reboot
 adb reboot
