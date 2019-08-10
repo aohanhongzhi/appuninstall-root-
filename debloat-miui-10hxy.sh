@@ -1,3 +1,5 @@
+#显示所有安装的软件
+# adb shell pm list package | grep mi
 # 使用-k参数：保留安装包的数据和缓存目录。
 adb shell pm uninstall -k --user 0 com.android.bips
 adb shell pm uninstall -k --user 0 com.android.bookmarkprovider
@@ -128,7 +130,7 @@ adb shell pm uninstall -k --user 0 com.suning.mobile.ebuy
 adb shell pm uninstall -k --user 0 com.wuba
 adb shell pm uninstall -k --user 0 com.miui.miuibbs
 adb shell pm uninstall -k --user 0 com.iflytek.inputmethod.miui
-
+adb shell pm uninstall -k --user 0 com.miui.huanji
 
 #failure，也许是可以手动卸载的
 adb shell pm uninstall -k --user 0 com.mfashiongallery.emag
