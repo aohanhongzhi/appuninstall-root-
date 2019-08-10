@@ -1,5 +1,8 @@
-#显示所有安装的软件
-# adb shell pm list package | grep mi
+
+#查看安装的应用
+#adb shell pm list package
+#adb shell pm list package | grep browser
+
 # 使用-k参数：保留安装包的数据和缓存目录。
 adb shell pm uninstall -k --user 0 com.android.bips
 adb shell pm uninstall -k --user 0 com.android.bookmarkprovider
